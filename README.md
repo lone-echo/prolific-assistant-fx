@@ -1,2 +1,2 @@
-# prolific-assistant
-An extension for prolific.ac
+# prolific-assistant-fx
+Firefox fork of prolific-assistant
