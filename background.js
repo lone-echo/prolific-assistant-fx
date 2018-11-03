@@ -20,7 +20,7 @@ const getStorage = (key) =>
  */
 const getIntervalFromStorage = () =>
   new Promise(async (resolve) => {
-    const { interval } = await getStorage('options');
+    const interval = await getStorage('options');
     const ms = interval >= 60 ? interval * 1000 : 60 * 1000;
     resolve(ms);
   });
@@ -112,10 +112,11 @@ async function announceStudies(studies) {
     const options = await getStorage('options');
 
     if (options.announce) {
-      chrome.tts.speak('New studies availale on Prolific.', {
-        enqueue: true,
-        voiceName: 'Google US English',
-      });
+      var synth = window.speechSynthesis;
+      var voices = synth.getVoices();
+      var utterThis = new SpeechSynthesisUtterance('New studies available on Prolific.');
+      utterThis.voice = voices[0];
+      synth.speak(utterThis);
     }
   }
 }

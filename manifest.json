@@ -3,9 +3,10 @@
 
   "name": "Prolific Assistant",
 
-  "version": "2.0.5",
+  "version": "2.0.5-fx",
 
   "description": "Monitors https://prolific.ac/ for new studies.",
+
 
   "icons": {
     "16": "prolific.png",
@@ -21,17 +22,15 @@
   "author": "Kadauchi",
 
   "background": {
-    "scripts": ["background.js"],
-    "persistent": true
+    "scripts": ["background.js"]
   },
 
   "permissions": [
-    "tts",
     "storage",
     "notifications",
     "webRequest",
     "webRequestBlocking",
-    "https://www.prolific.ac/*"
+    "*://*.prolific.ac/*"
   ],
 
   "short_name": "PA"
