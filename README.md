@@ -1,2 +1,5 @@
 # prolific-assistant-fx
-Firefox fork of prolific-assistant
+Firefox port of prolific-assistant by Kadauchi
+
+## License
+Licensed under the [MIT](LICENSE.md) License.
