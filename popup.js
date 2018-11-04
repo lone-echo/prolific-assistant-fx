@@ -55,7 +55,7 @@ function displayStudies(studies) {
     studies.forEach((o) => {
       document
         .getElementById('studies')
-        .insertAdjacentHTML('beforeend', studyHTML(o));
+        .insertAdjacentHTML('beforeend', DOMPurify.sanitize(studyHTML(o)));
     });
   } else {
     document
