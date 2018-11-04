@@ -1,5 +1,5 @@
 {
-  "name": "prolific-assistant",
+  "name": "prolific-assistant-fx",
   "version": "1.0.0",
   "devDependencies": {
     "eslint": "^5.7.0",
