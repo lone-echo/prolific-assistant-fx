@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
 
-  "name": "Prolific Assistant",
+  "name": "Prolific Assistant FX",
 
   "version": "2.0.5",
 
-  "description": "Monitors https://prolific.ac/ for new studies.",
+  "description": "Monitors https://prolific.ac/ for new studies. Firefox port of Prolific Assistant by Kadauchi",
 
 
   "icons": {
@@ -15,11 +15,11 @@
 
   "browser_action": {
     "default_icon": "prolific.png",
-    "default_title": "Prolific Assistant",
+    "default_title": "Prolific Assistant FX",
     "default_popup": "popup.html"
   },
 
-  "author": "Kadauchi",
+  "author": "jurplel",
 
   "background": {
     "scripts": ["background.js"]
