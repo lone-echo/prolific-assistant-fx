@@ -78,7 +78,9 @@ function notification(study) {
   chrome.notifications.create(study.id, {
     type: 'basic',
     title: study.name,
-    message: 'Study now available on prolific',
+    message: 'Hosted by ' + study.researcher.name + 
+    '\nReward ' + toMoney(study.reward) + " | Avg. " + toMoney(study.average_reward_per_hour) + 
+    '\nPlaces ' + (study.total_available_places - study.places_taken),
     iconUrl: '/prolific.png',
   });
 }
