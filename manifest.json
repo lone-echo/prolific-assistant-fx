@@ -5,7 +5,7 @@
 
   "version": "2.0.5",
 
-  "description": "Monitors https://prolific.ac/ for new studies. Firefox port of Prolific Assistant by Kadauchi",
+  "description": "Monitors https://prolific.co/ for new studies. Firefox port of Prolific Assistant by Kadauchi",
 
 
   "icons": {
@@ -30,7 +30,7 @@
     "notifications",
     "webRequest",
     "webRequestBlocking",
-    "*://*.prolific.ac/*"
+    "*://*.prolific.co/*"
   ],
 
   "short_name": "PA"
