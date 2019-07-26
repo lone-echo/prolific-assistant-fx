@@ -2,7 +2,7 @@ let headers;
 let timeout;
 const notified = [];
 
-const studiesURL = 'https://www.prolific.ac/api/v1/studies/?current=1';
+const studiesURL = 'https://www.prolific.co/api/v1/studies/?current=1';
 
 const toMoney = (n) => (n / 100).toFixed(2);
 
